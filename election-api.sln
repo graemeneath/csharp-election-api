@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "election-api", "election-api\election-api.csproj", "{9270D5D1-A992-4C55-A3F1-D57B3114F939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "election-api.tests", "election-api.tests\election-api.tests.csproj", "{8D3473BA-82F2-462D-B8A3-3FEBF8DADF45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9270D5D1-A992-4C55-A3F1-D57B3114F939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9270D5D1-A992-4C55-A3F1-D57B3114F939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9270D5D1-A992-4C55-A3F1-D57B3114F939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9270D5D1-A992-4C55-A3F1-D57B3114F939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3473BA-82F2-462D-B8A3-3FEBF8DADF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3473BA-82F2-462D-B8A3-3FEBF8DADF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3473BA-82F2-462D-B8A3-3FEBF8DADF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3473BA-82F2-462D-B8A3-3FEBF8DADF45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE9890BD-FBD4-4B65-B253-6593BCDC4A48}
+	EndGlobalSection
+EndGlobal
