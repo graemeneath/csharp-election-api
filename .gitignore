@@ -1,1 +1,8 @@
+# Ignore Visual Studio specific folders
 .vs/
+.vscode/
+
+# Ignore build artifacts
+bin/
+obj/
+out/
