@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace election_api.Service
 {
-    class ScoreboardService
+    public class ScoreboardService
     {
         private Scoreboard scoreboard = new Scoreboard();
 
