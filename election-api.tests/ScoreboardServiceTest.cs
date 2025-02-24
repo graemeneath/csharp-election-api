@@ -65,6 +65,7 @@ namespace election_api.tests
         {
             return new ConstituencyResult
             {
+                name = "Test",
                 partyResults = new List<PartyResult>
                 {
                     new PartyResult { party = "A", votes = 100 },
