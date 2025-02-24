@@ -15,11 +15,20 @@ namespace election_api.Service
 
         internal void AddResult(ConstituencyResult cr)
         {
+            if (cr.partyResults == null)
+            {
+                throw new Exception("Party results are null");
+            }
+
             scoreboard.sum++;
 
             string winningParty = GetWinningParty(cr.partyResults);
-            if (scoreboard.results.TryGetValue(winningParty, out ScoreboardResult sr))
+            if (scoreboard.results.TryGetValue(winningParty, out ScoreboardResult? sr))
             {
+                if (sr == null)
+                {
+                    throw new Exception("Scoreboard result is null");
+                }
                 sr.seats++;
             }
             else
