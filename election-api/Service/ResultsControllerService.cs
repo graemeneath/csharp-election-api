@@ -1,9 +1,4 @@
 ﻿using election_api.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace election_api.Service
 {
@@ -34,7 +29,7 @@ namespace election_api.Service
         public Scoreboard GetScoreboard()
         {
             ScoreboardService scoreboardService = new ScoreboardService();
-            
+
             _resultService.GetAll().ToList().ForEach(result =>
             {
                 scoreboardService.AddResult(result.Value);

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace election_api.Model
+﻿namespace election_api.Model
 {
     public class Scoreboard
     {

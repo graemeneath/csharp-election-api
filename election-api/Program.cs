@@ -1,11 +1,8 @@
-﻿using election_api.Model;
-using election_api.Service;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-
+using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
+
 [assembly: InternalsVisibleTo("election-api.tests")]
 
 Console.WriteLine("Starting service...");

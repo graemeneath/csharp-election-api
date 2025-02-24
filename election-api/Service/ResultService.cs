@@ -1,11 +1,4 @@
 ﻿using election_api.Model;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace election_api.Service
 {
@@ -13,7 +6,8 @@ namespace election_api.Service
     {
         private Dictionary<int, ConstituencyResult> _results;
 
-        public ResultService() {
+        public ResultService()
+        {
             _results = new Dictionary<int, ConstituencyResult>();
         }
 
@@ -22,7 +16,8 @@ namespace election_api.Service
             return _results[id];
         }
 
-        public void NewResult(ConstituencyResult result) {
+        public void NewResult(ConstituencyResult result)
+        {
             _results.Add(result.Id, result);
         }
 
@@ -31,7 +26,8 @@ namespace election_api.Service
             return _results;
         }
 
-        public void Reset() { 
+        public void Reset()
+        {
             _results.Clear();
         }
     }
