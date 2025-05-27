@@ -10,6 +10,11 @@ Console.WriteLine("Starting service...");
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseUrls("http://localhost:8080");
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080); // This forces the binding
+});
+
 // Add services for controllers
 builder.Services.AddControllers();
 
