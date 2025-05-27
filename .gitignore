@@ -1,6 +1,7 @@
 # Ignore Visual Studio specific folders
 .vs/
 .vscode/
+publish/
 
 # Ignore build artifacts
 bin/
