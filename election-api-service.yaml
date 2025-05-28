@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: election-api-svc
+  namespace: default
+  labels:
+    app: election-api
+spec:
+  selector:
+    app: election-api
+  type: LoadBalancer  # Use NodePort or ClusterIP if LoadBalancer isn't available
+  ports:
+  - protocol: TCP
+    port: 8080        # Port exposed to external clients
+    targetPort: 8080  # Port inside the container
+
